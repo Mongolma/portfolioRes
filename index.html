@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio | Responsive Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+    <section class="banner" id="home">
+      <div class="textbx">
+        <h2>
+          Hello, I'm <br />
+          <span>Mongolmaa Gurbazar</span>
+        </h2>
+        <h3>I'm Full Stack Web Developer</h3>
+        <a href="#" class="btn">About Me</a>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+      <div class="content">
+        <div class="contentBx w50">
+          <h3>I'm Full Stack Web Developer</h3>
+          <p>
+            My name is Mongolmaa Gurbazar. I came from Mongolia eight years ago.
+            I have journalism degree in Mongolia. But because of language
+            difference i'm not able to work here as journalist. So i worked here
+            as caregiver and flip house on the side. I have done five houses so
+            far. It's not fun or glamoures as it looks on tv shows. It's endless
+            tasks but at the same time its quite satisfiyng to see the end of
+            the project.
+            <br> <br>
+            I like to read. Last year i made a goal to read 50 books. One book a week but i end up reading 30 books. I love reading plus it helps with my English. I try to be discipline with my daily routine which is read two hours minimum, jump rope 45 minutes following up stretches, and 15 minutes of juggling balls. Yes, i like to juggle balls.    
+          </p>
+            <br>        
+          <a href="resume.pdf" class="resume"
+          >Click here to see my resume</a
+        >
+        </div>
+        <div class="w50">
+          <img
+            src="/image/avocado-burger-flat.jpg"
+            alt="Picture of Mongolmaa"
+          />
+      </div>
+    </div>
+    </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="heading">
+        <h2>Latest projects </h2>
+      </div>
+      <div class="content">
+        <div class="project">
+         
+          <a href="https://still-island-50748.herokuapp.com/"> <img src="/image/passiveDeal.jpeg" alt="arbitrage"></a>
+        </div>
+        <div class="project">
+         <a href="https://fathomless-coast-95343.herokuapp.com/"><img src="/image/eatDaBurger.jpeg" alt="burger order page"></a> 
+        </div>
+        <div class="project">
+          <a href="https://mongolma.github.io/world-wide-travel-assistant/"><img src="/image/wordlwideTravelAssistant.jpeg" alt="beautiful view of ocean in the background and information of flag, currency, population, holiday and weather of place you search"></a>
+        </div>
+        <div class="project">
+         <a href="https://mongolma.github.io/weather-dashboard/"><img src="/image/weatherDashboard.jpeg" alt="weather forecast">
+         </a> 
+        </div>
+      </div>
+      <div class="heading">
+        <a href="#" class="btn">View More</a>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="headingC">
+        <h2>Contact</h2>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Contact info</h3>
+          <div class="contactInfoBox">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker"></i>
+                </div>
+               <div class="text">
+                 <h3>Address</h3>
+                <p>7911 westpark drive, <br>Tysons,Virginia <br>22102</p>
+            </div>
+           </div>  
+            <div class="box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text"><h3>Phone</h3>
+              <p>703-677-7551</p>
+            </div> 
+          </div> 
+            <div class="box">
+            <div class="icon"><i class="fas fa-envelope-open-text"></i></div>
+            <div class="text"> <h3>Email</h3>
+              <p>mongolmaa555@gmail.com</p>
+            </div>
+           </div>  
+          </div>
+        </div>
+        <div class="formbox">
+          <form>
+            <h3>Message me</h3>
+            <input type="text" name="" placeholder="Full Name">
+            <input type="email" name="" placeholder="Email">
+            <textarea placeholder="Your message here"></textarea>
+            <input type="submit" value="Send">
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+      function toggleMenu(){
+      var menuToggle = document.querySelector('.toggle');
+        var menu = document.querySelector('.menu');
+        menuToggle.classList.toggle('active');
+        menu.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>

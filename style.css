@@ -13,7 +13,7 @@ section {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(image/banner.jpg);
+  background: url(./image/banner.jpg);
   background-size: cover;
   background-position: right;
   display: flex;
